@@ -1,8 +1,4 @@
-import waveRender from './waveRender.js';
-import waveRender2 from './waveRender2.js';
-import lineRenderer from './lineRenderer.js'
 import starRenderer from './starRender.js'
-import nightRenderer from './staryNight.js'
 
 // Get the canvas element
 const canvas = document.getElementById('canvas');
@@ -41,7 +37,7 @@ function startAudio() {
 
 	// Make a new analyser
 	analyser = audioContext.createAnalyser()
-	
+
 	// Connect the analyser and the audio
 	const source = audioContext.createMediaElementSource(audio)
 	source.connect(analyser)
