@@ -16,7 +16,7 @@ function render(frequencyArray, ctx, centerX, centerY) {
 
     // Render stars
     const starRadius = 1.5;
-    const starCount = 35;
+    const starCount = 40;
     ctx.fillStyle = 'white';
     for (let i = 0; i < starCount; i++) {
         const x = Math.random() * ctx.canvas.width;
