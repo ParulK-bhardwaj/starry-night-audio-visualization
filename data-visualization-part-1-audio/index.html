@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Audio Visualizer</title>
+    <style>
+      body, html {
+        height: 100%;
+        background-color: rgb(169, 184, 233);
+        background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2017/01/18/1074866/9e0742c14747f28da3f1dbe20c8643e4-700.jpg");
+        background-size: cover;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #canvas {
+        background-color: black;
+        border: 1px solid;
+        border-radius: 0.5em;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); 
+        margin-bottom: 5px;
+      }
+
+      button {
+        margin: 5px;
+        padding: 1em;
+        border-radius: 0.25em;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+    <body>
+        <canvas id="canvas" width="600" height="400"></canvas>
+
+        <button id="button-play">Play</button>
+        <button id="button-pause">Stop</button>
+
+        <script src="script.js" type="module"></script>
+    </body>
+</html>
